@@ -1,0 +1,37 @@
+@mixin propiedades-parrafo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: overline;
+}
+
+@mixin estilos-parrafo($color, $fuente,$size, $grosor, $decoration){
+    color: $color;
+    font-family: $fuente;
+    font-size: $size;
+    font-weight: $grosor ;
+    text-decoration: $decoration ;
+}
+
+
+@mixin botones($color, $padding, $decoration){
+    background-color: $color;
+    padding: $padding;
+    text-decoration: $decoration;
+}
+
+
+
+
+
+
+.section-secundaria{
+    h2{
+        @include estilos-parrafo(red,Arial,35px,bold,none);
+    }
+    
+    p{
+        @include botones(yellow,25px,none);
+    }
+}

@@ -1,0 +1,16 @@
+.boton-blanco {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.boton-amarillo{
+    margin-top: 25px;
+    background-color: yellow;
+}
+
+.boton-01 {
+   @extend .boton-blanco 
+}
