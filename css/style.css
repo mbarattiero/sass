@@ -62,4 +62,10 @@ header nav ul li .enlace-negro {
   font-weight: bolder;
 }
 
+@media screen and (min-width: 480px) {
+  body {
+    background-color: red;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
